@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048</title>
+    <link type= "text/css" rel="stylesheet" href="style/main.css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+
+      
+          <script type="text/javascript" src="js/grid.js"></script>
+
+      <script type="text/javascript" src="js/game_over.js"></script>
+    <script type="text/javascript" src="js/jeu.js"></script>
+</head>
+
+<body>
+
+
+<div id='game_over'>
+    <p id='overwin'>Game over</p>
+    <form name= 'login' id='login'>
+      <input type='text' id='pseudo'>
+    </form>
+</div>
+<div id='win'>
+    <p>Winner</p>
+    <div id="togo"><a id='lien'>Continuer</a></div>
+</div>
+<div id='left'>
+  <div id='top'>
+    <h1 id='variable'>Top 10</h1>
+    <div id='result'>
+      <ul id='listes'></ul>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">
+          <p>Score</p>
+          <span id='score'>0</span>
+        </div>
+        <div class="best-container">
+          <p>Best</p>
+          <span id='best'>0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <a class="restart-button">New game</a>
+    </div> 
+    <div class="grid-container">
+      
+    </div>
+  </div>
+  <div id='variation'>
+      <form id='cote'>
+        <input type="number" name="nb" min='3' max='10' id='number'>
+      </form>
+  </div>
+</body>
+</html>
